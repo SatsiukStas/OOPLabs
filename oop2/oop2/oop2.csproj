@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Serializer" />
+    <None Remove="SerializerLib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="SerializerLib">
+      <HintPath>..\OlegErshov .Net-Project main OOP-Serializer\bin\Debug\net7.0\SerializerLib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OlegErshov .Net-Project main OOP-Serializer\SerializerLib.csproj" />
+  </ItemGroup>
+</Project>

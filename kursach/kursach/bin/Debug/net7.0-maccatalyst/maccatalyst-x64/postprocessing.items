@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <_PostProcessingItem Include="kursach.app/Contents/MacOS/kursach">
+      <BCSymbolMapName>kursach.bcsymbolmap</BCSymbolMapName>
+      <NoDSymUtil>true</NoDSymUtil>
+      <dSYMSourcePathExists>false</dSYMSourcePathExists>
+      <NoSymbolStrip>true</NoSymbolStrip>
+      <dSYMInfoPlistRelativePath>kursach.app.dSYM\Contents\Info.plist</dSYMInfoPlistRelativePath>
+      <SymbolFile>/Users/stanislav/Projects/kursach/kursach/obj/Debug/net7.0-maccatalyst/maccatalyst-x64/mtouch-symbols.list</SymbolFile>
+      <DSymName>kursach.app.dSYM</DSymName>
+      <SourceProjectPath>/Users/stanislav/Projects/kursach/kursach</SourceProjectPath>
+    </_PostProcessingItem>
+  </ItemGroup>
+</Project>

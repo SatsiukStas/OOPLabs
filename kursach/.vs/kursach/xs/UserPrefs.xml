@@ -1,0 +1,72 @@
+﻿<Properties StartupConfiguration="{F286505D-C804-4922-9482-846D9578B520}|Default">
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
+  <MonoDevelop.Ide.ItemProperties.kursach PreferredExecutionTarget="MyAppleMacCatalystID" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="kursach/ViewModels/BasketViewModel.cs">
+    <Files>
+      <File FileName="../../../../usr/local/share/dotnet/packs/Microsoft.Maui.Resizetizer.Sdk/7.0.59/targets/Microsoft.Maui.Resizetizer.targets" Line="525" Column="9" />
+      <File FileName="kursach/MauiProgram.cs" Line="16" Column="10" />
+      <File FileName="kursach/ViewModels/MainMenuViewModel.cs" Line="77" Column="1" />
+      <File FileName="kursach/ViewModels/ProfileViewModel.cs" Line="1" Column="1" />
+      <File FileName="kursach/Views/ProfileView.xaml" Line="17" Column="9" />
+      <File FileName="kursach/Views/MainMenu.xaml.cs" Line="40" Column="2" />
+      <File FileName="kursach/Views/MainMenu.xaml" Line="114" Column="14" />
+      <File FileName="kursach/Views/EditToursView.xaml" Line="60" Column="54" />
+      <File FileName="kursach/Views/EditToursView.xaml.cs" Line="1" Column="1" />
+      <File FileName="kursach/ViewModels/MenuShellViewModel.cs" Line="1" Column="1" />
+      <File FileName="kursach/Views/LoginView.xaml" Line="1" Column="1" />
+      <File FileName="kursach/ViewModels/DetailTourViewModel.cs" Line="13" Column="1" />
+      <File FileName="kursach/Views/DetailTourView.xaml.cs" Line="10" Column="1" />
+      <File FileName="kursach/Views/DetailTourView.xaml" Line="11" Column="5" />
+      <File FileName="kursach/ViewModels/SettingTourViewModel.cs" Line="1" Column="1" />
+      <File FileName="kursach/ViewModels/EditVacanciesViewModel.cs" Line="60" Column="13" />
+      <File FileName="kursach/Models/User.cs" Line="11" Column="6" />
+      <File FileName="kursach/Models/Vacancy.cs" Line="4" Column="19" />
+      <File FileName="kursach/Services/DatabaseService.cs" Line="6" Column="26" />
+      <File FileName="kursach/Views/SettingVacancyView.xaml.cs" Line="1" Column="1" />
+      <File FileName="kursach/Views/SettingVacancyView.xaml" Line="1" Column="1" />
+      <File FileName="kursach/App.xaml" Line="1" Column="1" />
+      <File FileName="kursach/Views/MenuShell.xaml" Line="1" Column="1" />
+      <File FileName="kursach/Views/MenuShell.xaml.cs" Line="1" Column="1" />
+      <File FileName="kursach/ViewModels/BasketViewModel.cs" Line="4" Column="35" />
+      <File FileName="kursach/Views/BasketView.xaml" Line="64" Column="62" />
+      <File FileName="kursach/ViewModels/CreateVacancyViewModel.cs" Line="1" Column="1" />
+      <File FileName="kursach/ViewModels/BaseViewModel.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="kursach" expanded="True">
+            <Node name="kursach" expanded="True">
+              <Node name="Data" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Platforms" expanded="True">
+                <Node name="MacCatalyst" expanded="True" />
+              </Node>
+              <Node name="Services" expanded="True" />
+              <Node name="ViewModels" expanded="True">
+                <Node name="BasketViewModel.cs" selected="True" />
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="BasketView.xaml" expanded="True" />
+                <Node name="CreateVacancyView.xaml" expanded="True" />
+                <Node name="DetailVacancyView.xaml" expanded="True" />
+                <Node name="EditVacancyView.xaml" expanded="True" />
+                <Node name="MainMenu.xaml" expanded="True" />
+                <Node name="MenuShell.xaml" expanded="True" />
+                <Node name="ProfileView.xaml" expanded="True" />
+                <Node name="SettingVacancyView.xaml" expanded="True" />
+              </Node>
+              <Node name="App.xaml" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

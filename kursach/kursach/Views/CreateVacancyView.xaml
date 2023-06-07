@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodel="clr-namespace:kursach.ViewModels"
+             x:Class="kursach.Views.CreateVacancyView"
+             x:DataType="viewmodel:CreateVacancyViewModel">
+    <Grid>
+            <Grid
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Border
+                        x:Name="border"
+                        StrokeThickness="0"
+                        Grid.Row="0"
+                        Margin="25,250,25,150"
+                        BackgroundColor="{StaticResource Secondary}">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="25" />
+                    </Border.StrokeShape>
+                    <Grid
+                        Padding="20,20,20,20"
+                        HorizontalOptions="FillAndExpand"
+                        RowSpacing="20"
+                        RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto"
+                        VerticalOptions="FillAndExpand">
+
+                        <Label
+                            Grid.Row="0"
+                            FontAttributes="Bold"
+                            FontSize="24"
+                            HorizontalOptions="CenterAndExpand"
+                            Text="Creation"
+                            TextColor="Black" />
+
+                        <Border 
+                            Grid.Row="1"
+                            Padding="8"
+                            BackgroundColor="{StaticResource Secondary}">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="25" />
+                            </Border.StrokeShape>
+                            <Entry
+                                HeightRequest="40"
+                                IsTextPredictionEnabled = "False"
+                                IsSpellCheckEnabled="false"
+                                ClearButtonVisibility="WhileEditing"
+                                HorizontalOptions="FillAndExpand"
+                                TextColor="Black"
+                                Placeholder="Name"
+                                Text="{Binding VacancyName}"
+                                
+                                VerticalOptions="FillAndExpand" />
+                        </Border>
+
+                        <Border
+                            Grid.Row="2"
+                            Padding="8"
+                            BackgroundColor="{StaticResource Secondary}">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="25" />
+                            </Border.StrokeShape>
+                            <Entry
+                                HeightRequest="40"
+                                IsTextPredictionEnabled = "False"
+                                IsSpellCheckEnabled="false"
+                                ClearButtonVisibility="WhileEditing"
+                                HorizontalOptions="FillAndExpand"
+                                TextColor="Black"
+                                Text="{Binding VacancySalary}"
+                                Placeholder="Salary"
+                                
+                                VerticalOptions="FillAndExpand" />
+                        </Border>
+
+                        <Border 
+                            Grid.Row="3"
+                            Padding="8"
+                            BackgroundColor="{StaticResource Secondary}">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="25" />
+                            </Border.StrokeShape>
+                            <Entry
+                                HeightRequest="100"
+                                IsTextPredictionEnabled = "False"
+                                IsSpellCheckEnabled="false"
+                                ClearButtonVisibility="WhileEditing"
+                                HorizontalOptions="FillAndExpand"
+                                TextColor="Black"
+                                Placeholder="Description"
+                                HorizontalTextAlignment="Start"
+                                VerticalTextAlignment="Start"
+                                Text="{Binding VacancyDescription}"
+                                VerticalOptions="FillAndExpand" />
+                        </Border>
+
+                        <Button
+                            Grid.Row="4"
+                            BackgroundColor="LightSeaGreen"
+                            TextColor="{StaticResource Secondary}"
+
+                            
+                            CornerRadius="20"
+                            IsEnabled="{Binding IsNotBusy}"
+                            Text="Create NEW vacancy"
+                            Command="{Binding CreateVacancyCommand}"/>
+
+                        <Button
+                            Grid.Row="5"
+                            BackgroundColor="LightSeaGreen"
+                            TextColor="{StaticResource Secondary}"
+                            Clicked="BackToMyVacancies"
+                            CornerRadius="20"
+                            Text="Back to My vacancies" />
+
+
+                        <ActivityIndicator
+                            x:Name="ActivityIndicator"
+                            IsVisible="{Binding IsBusy}"
+                            IsRunning="{Binding IsBusy}"
+                            Grid.Row="0"
+                            HeightRequest="500"
+                            Grid.RowSpan="5"
+                            BackgroundColor="{StaticResource Secondary}"
+                            Color="{StaticResource PrimaryDark}"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="StartAndExpand"/>
+                    </Grid>
+                </Border>
+            </Grid>
+        </Grid>
+</ContentPage>

@@ -1,0 +1,147 @@
+﻿<ContentPage
+    x:Class="kursach.Views.LoginView"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:viewmodel="clr-namespace:kursach.ViewModels"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:behaviors="clr-namespace:CommunityToolkit.Maui.Behaviors;assembly=CommunityToolkit.Maui"
+    x:DataType="viewmodel:LoginViewModel"
+    Shell.NavBarIsVisible="False"
+    BackgroundColor="{DynamicResource SecondaryColor}"
+    NavigationPage.HasNavigationBar="False">
+
+    <Page.Behaviors>
+        <behaviors:StatusBarBehavior StatusBarColor="{StaticResource Primary}"></behaviors:StatusBarBehavior>
+    </Page.Behaviors>
+
+    <ContentPage.Content>
+
+        <Grid>
+            
+
+            <Grid
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Border
+                    x:Name="Border"
+                    StrokeThickness="0"
+                    Grid.Row="0"
+                    Margin="25,200,25,150"
+                    BackgroundColor="{StaticResource Secondary}">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="25" />
+                    </Border.StrokeShape>
+                    <Grid
+                        RowSpacing="20"
+                        Padding="20,20,20,20"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand"
+                        RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto">
+                        <Label
+                            Grid.Row="0"
+                            FontAttributes="Bold"
+                            FontSize="24"
+                            HorizontalOptions="CenterAndExpand"
+                            Text="Welcome to kursach app!"
+                            TextColor="Black" />
+                        <Label
+                            Grid.Row="1"
+                            HorizontalOptions="CenterAndExpand"
+                            Text="Login in to account"
+                            TextColor="Black" />
+
+                        <Border
+                            Grid.Row="2"
+                            Padding="8"
+                            BackgroundColor="{StaticResource Secondary}">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="25" />
+                            </Border.StrokeShape>
+
+                            <Entry
+                                BackgroundColor="{StaticResource Secondary}"
+                                HeightRequest="40"
+                                IsTextPredictionEnabled = "False"
+                                IsSpellCheckEnabled="false"
+                                ClearButtonVisibility="WhileEditing"
+                                x:Name="EmailEntry"
+                                HorizontalOptions="FillAndExpand"
+                                TextColor="Black"
+                                Placeholder="Email"
+                                Text="{Binding UserEmail}"
+                                VerticalOptions="FillAndExpand" />
+
+                        </Border>
+
+                        <Border 
+                            Grid.Row="3"
+                            Padding="8"
+                            BackgroundColor="{StaticResource Secondary}">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="25" />
+                            </Border.StrokeShape>
+
+                            <Entry
+                                BackgroundColor="{StaticResource Secondary}"
+                                HeightRequest="40"
+                                IsTextPredictionEnabled = "False"
+                                IsSpellCheckEnabled="false"
+                                ClearButtonVisibility="WhileEditing"
+                                x:Name="PasswordEntry"
+                                HorizontalOptions="FillAndExpand"
+                                TextColor="Black"
+                                IsPassword="True"
+                                Placeholder="Password"
+                                Text="{Binding UserPassword}"
+                                VerticalOptions="FillAndExpand" />
+
+                        </Border>
+                        <Button
+                            Grid.Row="4"
+                            x:Name="LoginBtn"
+                            IsEnabled="{Binding IsNotBusy}"
+                            BackgroundColor="{StaticResource Primary}"
+                            TextColor="{StaticResource Secondary}"
+                            Command="{Binding LoginCommand}"
+                            CornerRadius="20"
+                            Text="Login" />
+                        <Label
+                            Grid.Row="5"
+                            HorizontalOptions="Center"
+                            TextColor="Black"
+                            FontSize="14"
+                            Text="Don't have an account?"/>
+                        <Button
+                            Grid.Row="6"
+                            IsEnabled="{Binding IsNotBusy}"
+                            x:Name="RegisterBtn"
+                            BackgroundColor="{StaticResource Primary}"
+                            TextColor="{StaticResource Secondary}"
+                            Command="{Binding RegisterCommand}"
+                            CornerRadius="20"
+                            Text="Register" />
+
+                        <ActivityIndicator
+                            x:Name="ActivityIndicator"
+                            IsVisible="{Binding IsBusy}"
+                            IsRunning="{Binding IsBusy}"
+                            Grid.Row="0"
+                            HeightRequest="400"
+                            Grid.RowSpan="7"
+                            BackgroundColor="{StaticResource Secondary}"
+                            Color="{StaticResource PrimaryDark}"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="CenterAndExpand"/>
+                    </Grid>
+                </Border>
+            </Grid>
+        </Grid>
+
+    </ContentPage.Content>
+
+</ContentPage>

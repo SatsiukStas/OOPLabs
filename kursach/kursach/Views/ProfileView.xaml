@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodel="clr-namespace:kursach.ViewModels"
+             x:Class="kursach.Views.ProfileView"
+             x:DataType="viewmodel:ProfileViewModel"
+             Shell.NavBarIsVisible="False"
+             Title="Profile"
+             BackgroundColor="{StaticResource Secondary}">
+
+    <Grid 
+        BackgroundColor="{StaticResource Secondary}"
+        RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto"
+        Padding="20"
+        RowSpacing="10">
+
+        
+
+        <Border
+            Grid.Row="1"
+            HeightRequest="100"
+            Padding="10"
+            BackgroundColor="WhiteSmoke">
+            <Border.StrokeShape>
+                <RoundRectangle
+                    CornerRadius="20"></RoundRectangle>
+            </Border.StrokeShape>
+            <Grid
+                ColumnDefinitions="275,*">
+                <Label
+                    VerticalOptions="Center"
+                    FontSize="20"
+                    TextColor="Black"
+                    Grid.Column="0"
+                    Text="{Binding UserEmail,
+             StringFormat='Email:   {0}'}"/>
+
+                <Button
+                    Grid.Column="1"
+                    IsEnabled="{Binding IsNotBusy}"
+                    HeightRequest="55"
+                    WidthRequest="250"
+                    Padding="7"
+                    CornerRadius="7"
+                    Text="Change Email"
+                    TextColor="White"
+                    BackgroundColor="{StaticResource Primary}"
+                    Command="{Binding ChangeEmailCommand}">
+                </Button>
+            </Grid>
+        </Border>
+
+
+
+        <Border
+            Grid.Row="2"
+            HeightRequest="100"
+            Padding="10"
+            BackgroundColor="WhiteSmoke">
+            <Border.StrokeShape>
+                <RoundRectangle
+                    CornerRadius="20"></RoundRectangle>
+            </Border.StrokeShape>
+            <Grid
+                ColumnDefinitions="275,*">
+                <Label
+                    VerticalOptions="Center"
+                    FontSize="20"
+                    TextColor="Black"
+                    Grid.Column="0"
+                    Text="{Binding UserPassword,
+             StringFormat='Password:   {0}'}"/>
+
+                <Button
+                    Grid.Column="1"
+                    IsEnabled="{Binding IsNotBusy}"
+                    HeightRequest="55"
+                    WidthRequest="250"
+                    Padding="7"
+                    CornerRadius="7"
+                    Text="Change Password"
+                    TextColor="White"
+                    BackgroundColor="{StaticResource Primary}"
+                    Command="{Binding ChangePasswordCommand}">
+                </Button>
+            </Grid>
+        </Border>
+
+        
+
+        <Button
+            Grid.Row="6"
+            WidthRequest="200"
+            Grid.ColumnSpan="2"
+            Text="Log out from profile"
+            IsEnabled="{Binding IsNotBusy}"
+            BackgroundColor="{StaticResource Primary}"
+            Command="{Binding LogOutCommand}"
+            TextColor="White">
+        </Button>
+
+        <ActivityIndicator
+            IsVisible="{Binding IsBusy}"
+            IsRunning="{Binding IsBusy}"
+            Grid.RowSpan="7"
+            Grid.ColumnSpan="2"
+            BackgroundColor="Transparent"
+            Color="{StaticResource PrimaryDark}"
+            HeightRequest="100"
+            WidthRequest="100"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="CenterAndExpand"/>
+
+    </Grid>
+
+</ContentPage>

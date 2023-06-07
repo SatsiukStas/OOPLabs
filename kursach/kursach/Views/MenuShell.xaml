@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="kursach.Views.MenuShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:kursach.Views"
+    xmlns:model="clr-namespace:kursach.Models"
+    TabBarIsVisible="True">
+
+    <!--<Shell.FlyoutHeader>
+        <Image Source="forflyout.png" Aspect="AspectFill"></Image>
+    </Shell.FlyoutHeader>-->
+
+    <ShellContent
+        ContentTemplate="{DataTemplate local:LoginView}"
+        Shell.FlyoutBehavior="Disabled"
+        Shell.TabBarIsVisible="False"
+        Route="LoginView"/>
+
+    <ShellContent
+        ContentTemplate="{DataTemplate local:RegisterPageView}"
+        FlyoutItemIsVisible="False"
+        Shell.TabBarIsVisible="False"
+        Shell.FlyoutBehavior="Disabled"
+        Route="RegisterPageView"/>
+
+    <ShellContent
+        ContentTemplate="{DataTemplate local:CreateVacancyView}"
+        FlyoutItemIsVisible="False"
+        Shell.TabBarIsVisible="False"
+        Shell.FlyoutBehavior="Disabled"
+        Route="CreateVacancyView"/>
+
+
+    <TabBar>
+        <Tab
+            Title="Vacancy overview" 
+            >
+            <ShellContent
+                ContentTemplate="{DataTemplate local:MainMenu}" 
+                Route="MainMenu"/>
+        </Tab>
+        <Tab
+            Title="My Basket"
+            >
+            <ShellContent
+                ContentTemplate="{DataTemplate local:BasketView}"
+                Route="BasketView"/>
+        </Tab>
+        <Tab
+            Title="My profile"
+            >
+            <ShellContent
+                ContentTemplate="{DataTemplate local:ProfileView}"
+                Route="ProfileView"/>
+        </Tab>
+    </TabBar>
+
+</Shell>

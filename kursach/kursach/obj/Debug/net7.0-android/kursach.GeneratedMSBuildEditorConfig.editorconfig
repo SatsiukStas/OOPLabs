@@ -1,0 +1,93 @@
+is_global = true
+build_property.TargetFramework = net7.0-android
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = true
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.RootNamespace = kursach
+build_property.ProjectDir = /Users/stanislav/Projects/kursach/kursach/
+
+[/Users/stanislav/Projects/kursach/kursach/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = kursach.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[/Users/stanislav/Projects/kursach/kursach/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = kursach.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Colors.xaml
+
+[/Users/stanislav/Projects/kursach/kursach/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = kursach.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Styles.xaml
+
+[/Users/stanislav/Projects/kursach/kursach/Views/BasketView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = kursach.Views.BasketView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/BasketView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/BasketView.xaml
+
+[/Users/stanislav/Projects/kursach/kursach/Views/CreateVacancyView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = kursach.Views.CreateVacancyView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/CreateVacancyView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/CreateVacancyView.xaml
+
+[/Users/stanislav/Projects/kursach/kursach/Views/DetailVacancyView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = kursach.Views.DetailVacancyView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/DetailVacancyView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/DetailVacancyView.xaml
+
+[/Users/stanislav/Projects/kursach/kursach/Views/EditVacancyView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = kursach.Views.EditVacancyView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/EditVacancyView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/EditVacancyView.xaml
+
+[/Users/stanislav/Projects/kursach/kursach/Views/LoginView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = kursach.Views.LoginView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/LoginView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/LoginView.xaml
+
+[/Users/stanislav/Projects/kursach/kursach/Views/MainMenu.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = kursach.Views.MainMenu.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/MainMenu.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/MainMenu.xaml
+
+[/Users/stanislav/Projects/kursach/kursach/Views/MenuShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = kursach.Views.MenuShell.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/MenuShell.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/MenuShell.xaml
+
+[/Users/stanislav/Projects/kursach/kursach/Views/ProfileView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = kursach.Views.ProfileView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/ProfileView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/ProfileView.xaml
+
+[/Users/stanislav/Projects/kursach/kursach/Views/RegisterPageView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = kursach.Views.RegisterPageView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/RegisterPageView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/RegisterPageView.xaml
+
+[/Users/stanislav/Projects/kursach/kursach/Views/SettingVacancyView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = kursach.Views.SettingVacancyView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/SettingVacancyView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/SettingVacancyView.xaml

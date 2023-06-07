@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1704.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "oop2", "oop2\oop2.csproj", "{480E17C7-9243-465B-B76C-F27983667F90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerializerLib", "OlegErshov .Net-Project main OOP-Serializer\SerializerLib.csproj", "{C186E038-01BF-496A-898C-9FAEB3B39696}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{480E17C7-9243-465B-B76C-F27983667F90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{480E17C7-9243-465B-B76C-F27983667F90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{480E17C7-9243-465B-B76C-F27983667F90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{480E17C7-9243-465B-B76C-F27983667F90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C186E038-01BF-496A-898C-9FAEB3B39696}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C186E038-01BF-496A-898C-9FAEB3B39696}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C186E038-01BF-496A-898C-9FAEB3B39696}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C186E038-01BF-496A-898C-9FAEB3B39696}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DF2FEFA8-59BA-4554-BEF5-B70FFC52FB5C}
+	EndGlobalSection
+EndGlobal

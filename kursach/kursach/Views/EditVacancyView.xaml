@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodel="using:kursach.ViewModels"
+             xmlns:model="clr-namespace:kursach.Models"
+             x:Class="kursach.Views.EditToursView"
+             x:DataType="viewmodel:EditToursViewModel"
+             Title="Editing vacancies">
+    <ContentPage.Content>
+        <Grid
+            ColumnDefinitions="*,*"
+            ColumnSpacing="5"
+            RowDefinitions="Auto,Auto,*,Auto"
+            RowSpacing="0"
+            BackgroundColor="{StaticResource Secondary}">
+
+            <Label 
+                Grid.ColumnSpan="2"
+                   Grid.Row="0"
+                   Text="Editing of vacancies"
+                   TextColor="Black"
+                   Margin="20,20,20,0"
+                   FontSize="25"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Start"
+                   VerticalOptions="Center"/>
+
+            <Label
+                Grid.ColumnSpan="2"
+                Grid.Row="1"
+                TextColor="Black"
+                Margin="20"
+                FontSize="20"
+                HorizontalOptions="Start"
+                VerticalOptions="Center"
+                Text ="{Binding Vacancies.Count, 
+                StringFormat='Number of vacancies: {0}'}"/>
+
+            <CollectionView 
+                Grid.ColumnSpan="2"
+                Grid.Row="2"
+                x:Name="CollectionView"
+                ItemsSource="{Binding Vacancies}"
+                SelectionMode="None">
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="model:Vacancy">
+                        <Border Padding="5" 
+                                BackgroundColor="{StaticResource Tertiary}" 
+                                StrokeThickness="0">
+                            <Border.StrokeShape>
+                                <RoundRectangle
+                                    CornerRadius="20"/>
+                            </Border.StrokeShape>
+                            <Grid 
+                                Margin="10"
+                                Padding="10" 
+                                RowDefinitions="*,*" 
+                                ColumnDefinitions="10,150,*">
+                                
+                                <StackLayout 
+                                    Grid.Row="0" 
+                                    Grid.RowSpan="2"
+                                    Grid.Column="1"
+                                    VerticalOptions="Center">
+                                    <Label
+                                        Text="{Binding Name}"
+                                        Padding="10,0,0,10" 
+                                        FontSize="17" 
+                                        MaxLines="2" 
+                                        FontAttributes="Bold"
+                                        TextColor="Black"/>
+                                    <Label 
+                                        Text="{Binding Salary}"
+                                        Padding="10,0,0,0"
+                                        FontAttributes="Bold"
+                                        FontSize="20"
+                                        TextColor="{StaticResource Primary}"/>
+                                </StackLayout>
+                                <VerticalStackLayout 
+                                    Grid.Row="0"
+                                    Grid.Column="3"
+                                    Margin="0,25,0,0"
+                                    Spacing="5"
+                                    VerticalOptions="Start">
+                                    <Button 
+                                        FontSize="15"
+                                        Command="{Binding Source={x:Reference CollectionView},
+                                        Path=BindingContext.EditVacancyCommand}"
+                                        CommandParameter="{Binding}"
+                                        BackgroundColor="{StaticResource Primary}"
+
+                                        Text="Edit" 
+                                        TextColor="White"
+                                        HorizontalOptions="End" 
+                                        HeightRequest="40" 
+                                        WidthRequest="80" />
+                                    <Button
+                                        FontSize="15" 
+                                        Command="{Binding Source={x:Reference CollectionView},
+                                        Path=BindingContext.DeleteVacancyCommand}"
+                                        CommandParameter="{Binding}" 
+                                        BackgroundColor="MediumVioletRed" 
+                                        Text="Delete"
+                                        TextColor="White"
+                                        HorizontalOptions="End"
+                                        VerticalOptions="Center"
+                                        HeightRequest="40"
+                                        WidthRequest="80" />
+                                </VerticalStackLayout>
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+            
+
+            <ActivityIndicator
+                IsVisible="{Binding IsBusy}"
+                IsRunning="{Binding IsBusy}"
+                Grid.RowSpan="3"
+                Grid.ColumnSpan="2"
+                BackgroundColor="Transparent"
+                Color="{StaticResource PrimaryDark}"
+                HeightRequest="100"
+                WidthRequest="100"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="CenterAndExpand"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
